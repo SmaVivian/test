@@ -7,6 +7,10 @@
     <span @click="handleConfirm">消息确认框</span>
     <span style="margin-left:20px;" @click="test">测试测试</span>
     <span style="margin-left:20px;" @click="handleNotify">消息提示框</span>
+
+    <div class="aaa pa-5">
+      <p>vuetify中的变量</p>
+    </div>
   </div>
 </template>
 
@@ -86,6 +90,9 @@
 
 <style lang="scss" scoped>
 .page-demo4 {
-
+  .aaa {
+    color: var(--v-primary-base);
+    background-color: var(--v-accent-lighten2);
+  }
 }
 </style>
