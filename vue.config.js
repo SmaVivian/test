@@ -36,8 +36,14 @@ module.exports = {
         ws: false,
         changeOrigin: true
       }
-    }
+    },
+    // overlay: {
+    //   warnings: false,
+    //   errors: false
+    // },
   },
 
-  lintOnSave: undefined
+  // 屏蔽eslint检查
+  lintOnSave: false
+  // lintOnSave: undefined
 }

@@ -56,7 +56,7 @@
     methods: {
       close() {
         this.show = false
-        this.$el.remove() //再点击关闭得时候要将其移出，（仅在第一种方法中使用）
+        // this.$el.remove() //再点击关闭得时候要将其移出，（仅在第一种方法中使用???）
         this.confirmSure()
       }
     }
