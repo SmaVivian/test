@@ -5,7 +5,8 @@ function resolve(dir) {
 }
 
 module.exports = {
-  publicPath: './', // 相对路径
+  // publicPath: './', // 相对路径 history模式下 vue.config.js中publicPath不要设置为相对路径
+  // publicPath: '/my-app/', // 部署在一个子路径上
   chainWebpack: config => {
     config.resolve.alias
       .set('@', resolve('src'))

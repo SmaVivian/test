@@ -1,8 +1,9 @@
 <template>
   <v-app class="g-app" id="app">
-    <!-- <cmpHeader></cmpHeader> -->
+    <cmpHeader></cmpHeader>
     <v-main :class="{'app-mobile': $vuetify.breakpoint.mobile}">
       <v-container fluid>
+        <cmpBread></cmpBread>
         <!-- 如果使用 vue-router -->
         <router-view></router-view>
       </v-container>
@@ -12,10 +13,11 @@
 </template>
 
 <script>
-// import cmpHeader from '@cmp/header'
+import cmpHeader from '@cmp/header'
+import cmpBread from '@cmp/bread'
 export default {
   name: 'App',
-  // components: { cmpHeader },
+  components: { cmpHeader, cmpBread },
   data: () => ({
     //
   }),

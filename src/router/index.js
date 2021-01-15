@@ -9,7 +9,18 @@ const routes = [
     path: '/demo1',
     name: 'Demo',
     component: () => import('@views/demo/demo1.vue'),
-    meta: { title: '面包屑、flex布局' }
+    meta: { 
+      title: '面包屑、flex布局',
+      breadList: [{
+        text: "首页",
+        href: "/"
+      }, {
+        text: "系统设置",
+        href: "/demo1"
+      }, {
+        text: "用户管理"
+      }]
+    }
   },
   {
     path: '/demo2',
@@ -27,13 +38,31 @@ const routes = [
     path: '/demo4',
     name: 'Demo4',
     component: () => import('@views/demo/demo4.vue'),
-    meta: { title: '提示框+移动端微信登录' }
+    meta: { title: '提示框+移动端微信登录'},
   },
   {
     path: '/demo5',
     name: 'Demo5',
     component: () => import('@views/demo/demo5.vue'),
     meta: { title: 'tab列表+瀑布流' }
+  },
+  {
+    path: '/demo/detail',
+    name: 'demoDetail',
+    component: () => import('@views/demo/detail.vue'),
+    meta: { 
+      title: '详情',
+      breadList: [{
+        text: "首页",
+        href: "/"
+      }, {
+        text: "列表",
+        href: "/demo1"
+      }, {
+        text: "详情",
+        disabled: true
+      }]
+    }
   },
   {
     path: '/',

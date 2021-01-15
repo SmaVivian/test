@@ -8,6 +8,8 @@
     <span style="margin-left:20px;" @click="test">测试测试</span>
     <span style="margin-left:20px;" @click="handleNotify">消息提示框</span>
 
+    <p class="pa-5" @click="goDetail">跳转详情</p>
+
     <div class="aaa pa-5">
       <p>vuetify中的变量</p>
     </div>
@@ -22,6 +24,9 @@
       }
     },
     methods: {
+      goDetail() {
+        this.$router.push({path: '/demo/detail', query: {id: 2}})
+      },
       getDetail() {
         console.loe('data')
       },

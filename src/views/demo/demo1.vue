@@ -3,11 +3,11 @@
   <div class="page-demo1">
     <div class="content">
       <!-- 面包屑 -->
-      <v-breadcrumbs :items="items" large>
+      <!-- <v-breadcrumbs :items="items" large>
         <template v-slot:divider>
           <v-icon>mdi-chevron-right</v-icon>
         </template>
-      </v-breadcrumbs>
+      </v-breadcrumbs> -->
 
       <!-- flex布局 -->
       <v-layout wrap class="px-4 pb-3" style="height:300px;">
