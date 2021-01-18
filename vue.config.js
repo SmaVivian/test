@@ -8,6 +8,8 @@ module.exports = {
   // publicPath: './', // 相对路径 history模式下 vue.config.js中publicPath不要设置为相对路径
   // publicPath: '/my-app/', // 部署在一个子路径上
   chainWebpack: config => {
+    // 修复HMR(热更新失效) 
+    config.resolve.symlinks(true)
     config.resolve.alias
       .set('@', resolve('src'))
       .set('@assets', resolve('src/assets'))
